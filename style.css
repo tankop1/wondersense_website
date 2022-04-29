@@ -310,3 +310,13 @@ header {
         font-family: 'Poppins', sans-serif;
     }
 }
+
+@media only screen and (max-height: 700px) {
+    #gallery {
+        height: 115%;
+    }
+
+    #gallery-next {
+        margin-bottom: -200px;
+    }
+}
