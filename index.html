@@ -34,12 +34,12 @@
 
         <div id="menu-container">
             <div id="menu-left">
-                <a href="#">ABOUT</a>
-                <a href="#">GAMES</a>
-                <a href="#">CONTACT</a>
+                <a href="#about">ABOUT</a>
+                <a href="#games">GAMES</a>
+                <a href="#beta-tester">CONTACT</a>
             </div>
 
-            <button>BECOME A BETA TESTER</button>
+            <a id="beta-tester-link" href="#beta-tester">BECOME A BETA TESTER</a>
         </div>
 
         <img src="assets/icons8-menu.svg" alt="menu-icon" id="menu-icon" />
@@ -68,14 +68,134 @@
     </main>
 
     <section id="about">
-        <div id="about-left">
-            <h1>WHO WE ARE</h1>
-            <p>Hi, my name is Tanner Kopel, and I am founder and CEO of WonderSense Games, a one-man virtual reality game studio based in Dallas, Texas. I started this game studio in order to build high-quality VR experiences that truly immerse the player in lively, dynamic worlds. WonderSense Games is named after the metaphor "sense of wonder", which is a feeling of awe and amazement that we hope to recreate in all of our games.</p>
-            <p style="margin-top: 35px;">I began programming when I was just 15 years old during the COVID-19 pandemic, and specialized in front end web development for almost 2 years. However, when I watched Mark Zuckerberg's vision for the future of the metaverse at Facebook's connect 2021, I fell in love with the idea of virtual reality. I immediately began working on my first game, The Heist VR, with no experience in game development, and eventually started my own business to keep building even more immersive VR experiences.</p>
+        <div id="about-title" class="title">
+            <h1>ABOUT WONDERSENSE GAMES</h1>
+            <div class="underline"></div>
         </div>
 
-        <img src="assets/tanner-picture.webp" alt="CEO Portrait" />
+        <div id="about-container">
+            <div id="about-left">
+                <h1>WHO WE ARE</h1>
+                <p>Hi, my name is Tanner Kopel, and I am founder and CEO of WonderSense Games, a one-man virtual reality game studio based in Dallas, Texas. I started this game studio in order to build high-quality VR experiences that truly immerse the player in lively, dynamic worlds. WonderSense Games is named after the metaphor "sense of wonder", which is a feeling of awe and amazement that we hope to recreate in all of our games.</p>
+                <p style="margin-top: 35px;">I began programming when I was just 15 years old during the COVID-19 pandemic, and specialized in front end web development for almost 2 years. However, when I watched Mark Zuckerberg's vision for the future of the metaverse at Facebook's connect 2021, I fell in love with the idea of virtual reality. I immediately began working on my first game, The Heist VR, with no experience in game development, and eventually started my own business to keep building even more immersive VR experiences.</p>
+            </div>
+
+            <img src="assets/tanner-picture.webp" alt="CEO Portrait" />
+        </div>
     </section>
+
+    <section id="definition">
+        <div>
+            <h2>SENSE OF WONDER <span>noun</span></h2>
+            <p>A feeling of awakening or awe triggered by an expansion of one's awareness of what is possible or by confrontation with the vastness of space and time. This is the feeling that inspired me to start this game studio, and this is the feeling that I hope to capture in my future games.</p>
+        </div>        
+    </section>
+
+    <section id="games">
+        <div id="games-title" class="title">
+            <h1>OUR GAMES</h1>
+            <div class="underline"></div>
+        </div>
+
+        <div class="game" style="margin-top: 500px !important;">
+            <div class="game-left">
+                <h1>01</h1>
+                <p>FAST-PACED ARCADE SHOOTER</p>
+            </div>
+
+            <div class="game-right">
+                <img src="assets/heist-cover-art.png" alt="The Heist Cover Art"/>
+
+                <div class="game-text">
+                    <h2>THE HEIST VR</h2>
+                    <p>The Heist VR is a fun, fast-paced arcade shooter for the Oculus Quest. Play as an experienced thief as you infiltrate 3 different locations and escape with the cash. You must defend yourself from the incoming police as you wait for your bomb to explode and force your way through the armored doors.</p>
+                    <button>View Game</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="game">
+            <div class="game-left">
+                <h1>02</h1>
+                <p>ACTION-BASED ARCADE DRIVER</p>
+            </div>
+
+            <div class="game-right">
+                <img src="assets/coming-soon.jpg" alt="Coming Soon"/>
+
+                <div class="game-text">
+                    <h2>DARE TO DRIVE</h2>
+                    <p>The Heist VR is a fun, fast-paced arcade shooter for the Oculus Quest. Play as an experienced thief as you infiltrate 3 different locations and escape with the cash. You must defend yourself from the incoming police as you wait for your bomb to explode and force your way through the armored doors.</p>
+                    <button>View Game</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beta-tester">
+        <div id="beta-middle">
+            <h1>BECOME A BETA TESTER</h1>
+            <p id="beta-description">Sign up today to be contacted about beta testing opportunities for our future projects.</p>
+            
+            <!--<form>
+                <input type="email" placeholder="ENTER YOUR EMAIL" />
+                <button type="submit">JOIN</button>
+            </form>-->
+
+            <div id="mailchimp-container">
+                <!-- Begin Mailchimp Signup Form -->
+                <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+                <style type="text/css">
+                    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+                    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+                </style>
+                <div id="mc_embed_signup">
+                <form action="https://wondersensegames.us11.list-manage.com/subscribe/post?u=100f5c17ff7806666a5943422&amp;id=fa9dbe8d8a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                    
+                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                <div class="mc-field-group">
+                    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                </label>
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                </div>
+                    <div id="mce-responses" class="clear foot">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_100f5c17ff7806666a5943422_fa9dbe8d8a" tabindex="-1" value=""></div>
+                        <div class="optionalParent">
+                            <div class="clear foot">
+                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                                <p class="brandingLogo"><a href="http://eepurl.com/h0UvLn" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                </div>
+                <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+                <!--End mc_embed_signup-->
+            </div>
+
+            <div id="contact-info">
+                <p>tanner@wondersensegames.com</p>
+                <p>(469) 766 5787</p>
+                
+                <div>
+                    <a href="" target="_blank"><img src="assets/instagram.svg" alt="Instagram" /></a>
+                    <a href="" target="_blank"><img src="assets/tiktok.svg" alt="TikTok" /></a>
+                    <a href="" target="_blank"><img src="assets/discord.svg" alt="Discord" /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="assets/logo-horizontal.png" alt="logo" />
+        <p>© Copyright 2022, WonderSense Games LLC. All Rights Reserved.</p>
+        <p>This website uses icons from <a href="https://icons8.com/" target="_blank">Icons8</a></p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
