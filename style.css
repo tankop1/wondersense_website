@@ -473,6 +473,33 @@ header {
     }
 }
 
+@media only screen and (max-width: 850px) {
+    #about-title .underline {
+        width: 200px;
+        margin-left: calc(50% - 100px);
+    }
+
+    .hide-on-850 {
+        display: none;
+    }
+
+    #about-left p {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    #about-left {
+        width: 85%;
+    }
+
+    #about img {
+        width: 300px;
+    }
+}
+
 /* DEFINITION */
 
 #definition {
@@ -513,6 +540,27 @@ header {
     text-align: center;
     margin-top: 15px;
     font-size: 1.3rem;
+}
+
+/* DEFINITION MEDIA QUERIES */
+
+@media only screen and (max-width: 850px) {
+    #definition div {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #definition div {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #definition div {
+        width: 100%;
+        transform: scale(0.75);
+    }
 }
 
 /* GAMES */
