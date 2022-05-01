@@ -563,6 +563,13 @@ header {
     }
 }
 
+@media only screen and (max-width: 450px) {
+    #definition div {
+        width: 100%;
+        transform: scale(0.6);
+    }
+}
+
 /* GAMES */
 
 #games {
@@ -662,6 +669,86 @@ header {
     animation: pulse 500ms;
 }
 
+/* GAMES MEDIA QUERIES */
+
+@media only screen and (max-width: 650px) {
+    #games-title {
+        margin-left: 0px;
+        text-align: center;
+        left: calc(50% - 275px);
+    }
+
+    #games-title h1 {
+        font-size: 3.2rem;
+    }
+    
+    #games-title .underline {
+        width: 300px;
+        margin-left: calc(50% - 150px);
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .game {
+        flex-direction: column;
+    }
+
+    .game-left {
+        flex-direction: row;
+        width: 80%;
+        margin-bottom: -50px;
+        justify-content: flex-start;
+    }
+
+    .game-left p {
+        transform: none;
+        margin-left: 25px;
+    }
+
+    .game img {
+        border-radius: 25px;
+        height: 500px;
+        margin-top: -25px;
+    }
+}
+
+@media only screen and (max-width: 775px) {
+    .game-text {
+        width: 450px;
+    }
+
+    .game-text h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .game-text p {
+        font-size: 1rem;
+    }
+
+    .game img {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .game-text {
+        width: 350px;
+    }
+
+    .game-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .game-text p {
+        font-size: 0.85rem;
+    }
+
+    .game img {
+        height: 250px;
+    }
+}
+
 /* BETA TESTER */
 
 #beta-tester {
@@ -678,7 +765,7 @@ header {
 
 #beta-middle {
     width: 55%;
-    margin-top: 250px;
+    margin-top: 300px;
 }
 
 #beta-tester h1 {
@@ -721,6 +808,80 @@ header {
     filter: brightness(1.2);
 }
 
+/* BETA TESTER MEDIA QUERIES */
+
+@media only screen and (max-width: 1400px) {
+    #beta-middle {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #beta-middle {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    #beta-tester {
+        margin-top: 1700px;
+    }
+
+    #beta-middle {
+        margin-top: 350px;
+    }
+
+    #beta-tester h1 {
+        font-size: 3rem;
+    }
+    
+    #beta-description {
+        font-size: 0.85rem;
+    }
+
+    #contact-info {
+        flex-direction: column;
+        height: 150px;
+        margin-top: 35px;
+    }
+}
+
+@media only screen and (max-width: 775px) {
+    #beta-tester {
+        margin-top: 1300px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #beta-tester h1 {
+        font-size: 2rem;
+    }
+    
+    #beta-description {
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 650px) {    
+    #beta-description {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #contact-info {
+        transform: scale(0.8);
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #beta-tester {
+        margin-top: 1100px;
+    }
+}
+
 /* FOOTER */
 footer {
     background-color: white;
@@ -741,4 +902,55 @@ footer a {
 
 footer a:hover {
     filter: brightness(1.2);
+}
+
+/* FOOTER MEDIA QUERIES */
+
+@media only screen and (max-width: 1200px) {
+    footer img {
+        width: 250px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    footer img {
+        width: 200px;
+    }
+
+    footer p {
+        font-size: 0.85rem;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    footer img {
+        width: 300px;
+    }
+
+    footer p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    footer p {
+        font-size: 0.85rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #copyright {
+        width: 70%;
+        text-align: center;
+    }
 }
