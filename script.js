@@ -25,3 +25,6 @@ $('#menu-icon').click(() => {
     menuVisible ? $('#menu-container').css({"display": "none"}) : $('#menu-container').css({"display": "flex"});
     menuVisible ? menuVisible = false : menuVisible = true;
 });
+
+// POPUP
+$('#gallery-next').click(() => alert("The Heist VR is almost out, come back later for access to the game."));
