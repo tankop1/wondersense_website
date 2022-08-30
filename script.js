@@ -27,8 +27,8 @@ $('#menu-icon').click(() => {
 });
 
 // POPUP
-//$('#new-game').click(() => alert("[COMING SOON] isn't out yet, come back later for access to the game."));
+$('#new-game').click(() => alert("[COMING SOON] isn't out yet, come back later for access to the game."));
 
 // LINK TO THE HEIST
-$('#latest-game').click(() => window.open('https://www.oculus.com/experiences/quest/6808472739194566','_blank'));
+//$('#latest-game').click(() => window.open('https://www.oculus.com/experiences/quest/6808472739194566','_blank'));
 $('#heist-game').click(() => window.open('https://www.oculus.com/experiences/quest/6808472739194566','_blank'));
