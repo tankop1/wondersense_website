@@ -6,11 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="WonderSense Games">
     <meta name="description" content="We're a Texas based virtual reality game studio specializing in immersive experiences for the Meta Quest">
-    <meta name="keywords" content="wondersense, game, games, vr, virtual reality, oculus, oculus quest, meta quest, meta, metaverse, wonder, sense">
+    <meta name="keywords" content="wondersense, game, games, vr, virtual reality, oculus, oculus quest, meta quest, meta, metaverse, wonder, sense, tanner kopel, kopel, tanner">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
     <meta name="author" content="Tanner Kopel">
     <title>WonderSense Games</title>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSTK81TKN4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GSTK81TKN4');
+    </script>
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -61,14 +71,14 @@
             <p>We're a Texas based virtual reality game studio specializing in immersive experiences for the Meta Quest</p>
         </div>
 
-        <a href="#" id="gallery-next">
+        <a href="https://www.oculus.com/experiences/quest/6808472739194566" target="_blank" id="gallery-next">
             <img src="assets/heist-cover-art.png" alt="The Heist Cover Art" />
             
             <div id="next-text">
                 <h3>Our Latest Work</h3>
                 <p>The Heist VR | Meta Quest | 2022</p>
 
-                <button>View Game</button>
+                <button id="latest-game">View Game</button>
             </div>
         </a>
     </main>
@@ -115,7 +125,7 @@
                 <div class="game-text">
                     <h2>THE HEIST VR</h2>
                     <p>The Heist VR is a fun, fast-paced arcade shooter for the Oculus Quest. Play as an experienced thief as you infiltrate 3 different locations and escape with the cash. You must defend yourself from the incoming police as you wait for your bomb to explode and force your way through the armored doors.</p>
-                    <button>View Game</button>
+                    <button id="heist-game">View Game</button>
                 </div>
             </div>
         </div>
@@ -123,16 +133,16 @@
         <div class="game">
             <div class="game-left">
                 <h1>02</h1>
-                <p>ACTION-BASED ARCADE DRIVER</p>
+                <p>ACTION-BASED CAMPAIGN SHOOTER</p>
             </div>
 
             <div class="game-right">
                 <img src="assets/coming-soon.jpg" alt="Coming Soon"/>
 
                 <div class="game-text">
-                    <h2>DARE TO DRIVE</h2>
-                    <p>Enjoy advanced driving mechanics and immersive combat physics as you drive and fight off enemies throughout the world. You must play through the levels, completing various missions such as delivering merchandise, competing in races, or assassinating villanous figures. As you explore the game, you will find many mysterious secrets that give you hints about your true origins...</p>
-                    <button>View Game</button>
+                    <h2>[COMING SOON]</h2>
+                    <p>Enjoy advanced shooting mechanics and immersive combat physics as you run and fight off enemies throughout the map. You must play through the campaign, completing an immersive and unique story that takes you through a government-developed virtual world. As you explore the game, you will find many mysterious secrets that give you hints about the true purpose of the simulation you're tasked with exploring...</p>
+                    <button id="new-game">View Game</button>
                 </div>
             </div>
         </div>
