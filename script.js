@@ -27,7 +27,7 @@ $('#menu-icon').click(() => {
 });
 
 // POPUP
-$('#planet-game').click(() => alert("Planet Jumper VR isn't out yet, come back later for access to the game."));
+$('#planet-game').click(() => window.open('https://www.oculus.com/experiences/quest/5670074199754026/','_blank'));
 $('#new-game').click(() => alert("[COMING SOON] isn't out yet, come back later for access to the game."));
 $('#backrooms-game').click(() => alert("Welcome to the Backrooms isn't out yet, come back later for access to the game."));
 
